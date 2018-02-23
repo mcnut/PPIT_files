@@ -1,0 +1,49 @@
+MEAN is a free and open-source JavaScript software stack for building dynamic web sites and web applications.
+
+The MEAN stack is MongoDB, Express.js, AngularJS (or Angular), and Node.js. Because all components of the MEAN stack support programs are written in JavaScript, MEAN applications can be written in one language for both server-side and client-side execution environments.
+
+Name and history
+MEAN was coined by Valeri Karpov, a MongoDB developer. He introduced the term in a 2013 blog post.
+
+The logo concept, initially created by Austin Anderson for the original MEAN stack LinkedIn group, is an assembly of the first letter of each component of the MEAN acronym.
+
+The components of the MEAN stack are as follows:
+
+MongoDB, a NoSQL database
+Express.js, a web application framework that runs on Node.js
+Angular.js or Angular, JavaScript MVC frameworks that run in browser JavaScript engines
+Node.js, an execution environment for event-driven server-side and networking applications
+A number of variations on the traditional MEAN stack are available by replacing one or more of the components with similar (typically Javascript-based) frameworks. For example, in a MEEN stack, the JavaScript MVC framework Ember.js is used instead of Angular.
+
+Ref: Wikipedia https://en.wikipedia.org/wiki/MEAN_(software_bundle)
+
+=================================================
+
+Node Packet Manager:
+
+https://www.npmjs.com/package/mean
+
+npm installation:
+
+$ npm install [--save] mean
+
+bower installation:
+
+$ bower install mean
+
+=================================================
+
+Github: 
+
+https://github.com/meanjs
+
+=================================================
+
+Other links:
+
+http://mean.io/
+
+http://meanjs.org/
+
+https://www.codeschool.com/mean
+

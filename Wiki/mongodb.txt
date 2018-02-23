@@ -1,0 +1,97 @@
+MongoDB (from humongous) is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemas. MongoDB is developed by MongoDB Inc. and is free and open-source, published under a combination of the GNU Affero General Public License and the Apache License.
+
+History
+
+The software company then began developing MongoDB in 2007 as a component of a planned platform as a service product. In 2009, the company shifted to an open source development model, with the company offering commercial support and other services. In 2013, 10gen changed its name to MongoDB Inc.
+
+Main features
+Ad hoc queries
+MongoDB supports field, range queries, regular expression searches. Queries can return specific fields of documents and also include user-defined JavaScript functions. Queries can also be configured to return a random sample of results of a given size.
+
+Indexing
+Fields in a MongoDB document can be indexed with primary and secondary indices.
+
+Replication
+MongoDB provides high availability with replica sets. A replica set consists of two or more copies of the data. Each replica set member may act in the role of primary or secondary replica at any time. All writes and reads are done on the primary replica by default. Secondary replicas maintain a copy of the data of the primary using built-in replication. When a primary replica fails, the replica set automatically conducts an election process to determine which secondary should become the primary. Secondaries can optionally serve read operations, but that data is only eventually consistent by default.
+
+Load balancing
+MongoDB scales horizontally using sharding. The user chooses a shard key, which determines how the data in a collection will be distributed. The data is split into ranges (based on the shard key) and distributed across multiple shards. (A shard is a master with one or more slaves.). Alternatively, the shard key can be hashed to map to a shard – enabling an even data distribution.
+
+MongoDB can run over multiple servers, balancing the load or duplicating data to keep the system up and running in case of hardware failure.
+
+File storage
+MongoDB can be used as a file system with load balancing and data replication features over multiple machines for storing files.
+
+This function, called Grid File System, is included with MongoDB drivers. MongoDB exposes functions for file manipulation and content to developers. GridFS is used in plugins for NGINX and lighttpd. GridFS divides a file into parts, or chunks, and stores each of those chunks as a separate document.
+
+Aggregation
+MapReduce can be used for batch processing of data and aggregation operations.
+
+The aggregation framework enables users to obtain the kind of results for which the SQL GROUP BY clause is used. Aggregation operators can be strung together to form a pipeline – analogous to Unix pipes. The aggregation framework includes the $lookup operator which can join documents from multiple documents, as well as statistical operators such as standard deviation.
+
+Server-side JavaScript execution
+JavaScript can be used in queries, aggregation functions (such as MapReduce), and sent directly to the database to be executed.
+
+Capped collections
+MongoDB supports fixed-size collections called capped collections. This type of collection maintains insertion order and, once the specified size has been reached, behaves like a circular queue.
+
+Bug reports and criticisms
+Due to the default security configuration of MongoDB, allowing anyone to have full access to the database, data from tens of thousands of MongoDB installations has been stolen. Furthermore, many MongoDB servers have been held for ransom.
+
+In some failure scenarios where an application can access two distinct MongoDB processes, but these processes cannot access each other, it is possible for MongoDB to return stale reads. In this scenario it is also possible for MongoDB to roll back writes that have been acknowledged.
+
+Before version 2.2, concurrency control was implemented on a per-mongod basis. With version 2.2, concurrency control was implemented at the database level. Since version 3.0, pluggable storage engines were introduced, and each storage engine may implement concurrency control differently. With MongoDB 3.0 concurrency control is implemented at the collection level for the MMAPv1 storage engine, and at the document level with the WiredTiger storage engine. With versions prior to 3.0, one approach to increase concurrency is to use sharding. In some situations, reads and writes will yield their locks. If MongoDB predicts a page is unlikely to be in memory, operations will yield their lock while the pages load. The use of lock yielding expanded greatly in 2.2.
+
+Another criticism, from 2009, is related to the limitations of MongoDB when used on 32-bit systems. In some cases, this was due to inherent memory limitations. MongoDB recommends 64-bit systems and that users provide sufficient RAM for their working set.
+
+Up until version 3.3.11, MongoDB could not do collation-based sorting and was limited to byte-wise comparison via memcmp, which would not provide correct ordering for many non-English languages when used with a Unicode encoding. The issue was fixed on August 23, 2016.
+
+MongoDB queries against an index are not atomic and can miss documents which are being updated while the query is running and match the query both before and after an update.
+
+Architecture
+Programming language accessibility
+MongoDB has official drivers for major programming languages and development environments. There are also a large number of unofficial or community-supported drivers for other programming languages and frameworks.
+
+Management and graphical front-ends
+The primary interface to the database has been the mongo shell. Since MongoDB 3.2, MongoDB Compass is introduced as the native GUI. There are products and third-party projects that offer user interfaces for administration and data viewing.
+
+Licensing
+MongoDB is available at no cost under the GNU Affero General Public License, version 3. The language drivers are available under an Apache License. In addition, MongoDB Inc. offers proprietary licenses for MongoDB.
+
+MongoDB World
+MongoDB World is an annual developer conference hosted by MongoDB, Inc.
+
+Ref: Wikipedia https://en.wikipedia.org/wiki/MongoDB
+====================================================
+Visit the mongodb home page at:
+
+https://www.mongodb.com/
+====================================================
+Node Packet Manager
+
+https://www.npmjs.com/package/mongodb
+
+npm installation: 
+
+npm install mongodb --save
+
+====================================================
+Github:
+
+https://github.com/mongodb
+
+====================================================
+Other links:
+
+https://docs.mongodb.com/
+
+https://www.mongodb.com/what-is-mongodb
+
+https://www.tutorialspoint.com/mongodb/
+
+
+====================================================
+====================================================
+====================================================
+====================================================
+====================================================

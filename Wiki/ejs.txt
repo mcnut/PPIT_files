@@ -1,0 +1,28 @@
+Embedded JavaScript (EJS) is a set of two open source libraries providing in-browser client side templates for web development and as a template system for node.js (including client-side template functionality). EJS uses <% %> or [% %] tags, executing any JavaScript within the tags. Adding an equals sign (<%= %>) causes the enclosed JavaScript to be evaluated, and the toString representation to be appended to the document.
+
+The original client-side EJS has been subsumed into JavascriptMVC, official support is offered at their forum (the old google group is no longer active).
+
+Ref: StackOverflow https://stackoverflow.com/tags/ejs/info
+
+Visit the ejs home page at:
+
+http://www.embeddedjs.com/
+==========================
+Github:
+
+https://github.com/tj/ejs
+==========================
+Node Packet Manager: 
+
+https://www.npmjs.com/package/ejs
+
+npm installation: $ npm install ejs
+==========================
+
+Other links:
+
+https://code.google.com/archive/p/embeddedjavascript/wikis/Templates.wiki
+
+http://ejs.co/
+
+https://scotch.io/tutorials/use-ejs-to-template-your-node-application

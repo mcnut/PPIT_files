@@ -1,0 +1,35 @@
+Express.js
+
+Express.js, or simply Express, is a web application framework for Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs. It is the de facto standard server framework for Node.js.
+
+The original author, TJ Holowaychuk, described it as a Sinatra-inspired server, meaning that it is relatively minimal with many features available as plugins. Express is the backend part of the MEAN stack, together with MongoDB database and AngularJS frontend framework.
+
+History
+In June 2014, rights to manage the project were acquired by StrongLoop. StrongLoop was acquired by IBM in September 2015; in January 2016, IBM announced that it would place Express.js under the stewardship of the Node.js Foundation incubator.
+
+Ref: Wikipedia https://en.wikipedia.org/wiki/Express.js
+
+Visit the Express home page:
+
+https://expressjs.com/
+
+
+============================
+Node Packet Manager: 
+
+https://www.npmjs.com/package/express
+
+npm installation: $ npm install express --save
+============================
+
+Github:
+
+https://github.com/expressjs/express
+
+============================
+Other links:
+https://stackoverflow.com/questions/12616153/what-is-express-js
+
+http://www.tutorialspoint.com/expressjs/
+
+https://evanhahn.com/understanding-express/

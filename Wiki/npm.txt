@@ -1,0 +1,35 @@
+npm (software)
+From Wikipedia, the free encyclopedia
+
+npm is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js. It consists of a command line client, also called npm, and an online database of public packages, called the npm registry. The registry is accessed via the client, and the available packages can be browsed and searched via the npm website.
+
+History
+npm is written entirely in JavaScript and was developed by Isaac Z. Schlueter as a result of having "seen module packaging done terribly" and with inspiration from the shortcomings of other similar projects such as PEAR (PHP) and CPAN (Perl).
+
+Description
+npm is included as a recommended feature in Node.js installer. npm consists of a command line client that interacts with a remote registry. It allows users to consume and distribute JavaScript modules that are available on the registry. Packages on the registry are in CommonJS format and include a metadata file in JSON format. Over 477,000 packages are available on the main npm registry. The registry has no vetting process for submission, which means that packages found there can be low quality, insecure, or malicious. Instead, npm relies on user reports to take down packages if they violate policies by being insecure, malicious or low quality. npm exposes statistics including number of downloads and number of depending packages to assist developers in judging the quality of packages.
+
+In March 2016, npm attracted press attention after a package called left-pad, which was depended upon by many popular JavaScript packages, was unpublished as the result of a dispute. Although the package was re-published 3 hours later, it caused widespread disruption, leading npm to change its policies regarding unpublishing to prevent a similar event in the future.
+
+Usage
+npm can manage packages that are local dependencies of a particular project, as well as globally-installed JavaScript tools. When used as a dependency manager for a local project, npm can install, in one command, all the dependencies of a project through the package.json file. In the package.json file, each dependency can specify a range of valid versions using the semantic versioning scheme, allowing developers to auto-update their packages while at the same time avoiding unwanted breaking changes. npm also provides version-bumping tools for developers to tag their packages with a particular version.
+
+Alternatives
+There are a number of open-source alternatives to npm for installing modular JavaScript, including [ied, pnpm, npm-install, npmd, and Yarn, the last of which was released by Facebook in October 2016. They are all compatible with the public npm registry and use it by default, but provide different client-side experiences, usually focused on improving performance and determinism compared to the npm client.
+
+Ref: Wikipedia https://en.wikipedia.org/wiki/Npm_(software)
+===========================
+Visit the npm home page at:
+
+https://www.npmjs.com/
+===========================
+Github: 
+
+https://github.com/npm/npm
+===========================
+Other links:
+
+https://www.w3schools.com/nodejs/nodejs_npm.asp
+
+https://www.sitepoint.com/beginners-guide-node-package-manager/
+
